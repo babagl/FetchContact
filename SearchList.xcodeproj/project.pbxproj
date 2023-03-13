@@ -14,6 +14,10 @@
 		026A32D829BF6CCA00EA77CE /* SearchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A32D729BF6CCA00EA77CE /* SearchListTests.swift */; };
 		026A32E229BF6CCA00EA77CE /* SearchListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A32E129BF6CCA00EA77CE /* SearchListUITests.swift */; };
 		026A32E429BF6CCA00EA77CE /* SearchListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A32E329BF6CCA00EA77CE /* SearchListUITestsLaunchTests.swift */; };
+		026A32F129BF6D1900EA77CE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A32F029BF6D1900EA77CE /* Home.swift */; };
+		026A32F829BF80D800EA77CE /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A32F729BF80D800EA77CE /* Friend.swift */; };
+		026A32FA29BFA2AB00EA77CE /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A32F929BFA2AB00EA77CE /* ContactViewModel.swift */; };
+		026A32FD29BFA2FD00EA77CE /* ModelContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A32FC29BFA2FD00EA77CE /* ModelContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		026A32DD29BF6CCA00EA77CE /* SearchListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		026A32E129BF6CCA00EA77CE /* SearchListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListUITests.swift; sourceTree = "<group>"; };
 		026A32E329BF6CCA00EA77CE /* SearchListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		026A32F029BF6D1900EA77CE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		026A32F729BF80D800EA77CE /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		026A32F929BFA2AB00EA77CE /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		026A32FC29BFA2FD00EA77CE /* ModelContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,14 @@
 		026A32C529BF6CC800EA77CE /* SearchList */ = {
 			isa = PBXGroup;
 			children = (
+				026A32FB29BFA2CE00EA77CE /* Model */,
+				026A32F229BF793C00EA77CE /* ViewModel */,
 				026A32C629BF6CC800EA77CE /* SearchListApp.swift */,
 				026A32C829BF6CC800EA77CE /* ContentView.swift */,
 				026A32CA29BF6CCA00EA77CE /* Assets.xcassets */,
 				026A32CC29BF6CCA00EA77CE /* Preview Content */,
+				026A32F029BF6D1900EA77CE /* Home.swift */,
+				026A32F729BF80D800EA77CE /* Friend.swift */,
 			);
 			path = SearchList;
 			sourceTree = "<group>";
@@ -125,6 +137,22 @@
 				026A32E329BF6CCA00EA77CE /* SearchListUITestsLaunchTests.swift */,
 			);
 			path = SearchListUITests;
+			sourceTree = "<group>";
+		};
+		026A32F229BF793C00EA77CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				026A32F929BFA2AB00EA77CE /* ContactViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		026A32FB29BFA2CE00EA77CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				026A32FC29BFA2FD00EA77CE /* ModelContact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				026A32C929BF6CC800EA77CE /* ContentView.swift in Sources */,
+				026A32F129BF6D1900EA77CE /* Home.swift in Sources */,
+				026A32FA29BFA2AB00EA77CE /* ContactViewModel.swift in Sources */,
 				026A32C729BF6CC800EA77CE /* SearchListApp.swift in Sources */,
+				026A32FD29BFA2FD00EA77CE /* ModelContact.swift in Sources */,
+				026A32F829BF80D800EA77CE /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +452,7 @@
 				DEVELOPMENT_TEAM = A5L3S3UN63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Use the contact phone list";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +482,7 @@
 				DEVELOPMENT_TEAM = A5L3S3UN63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Use the contact phone list";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
